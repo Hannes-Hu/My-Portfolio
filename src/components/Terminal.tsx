@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react'
 import { cvData } from '../data/cvData'
+import { FaDownload, FaFilePdf, FaEye } from 'react-icons/fa'
 
 interface CommandHistory {
   command: string
@@ -16,6 +17,15 @@ const Terminal = () => {
   const terminalRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
 
+  const handleDownloadCV = () => {
+    window.open('/cv-hannes-huslage.pdf', '_blank')
+  }
+
+  const handleViewCV = () => {
+    // Open PDF in new tab for viewing
+    window.open('/cv-hannes-huslage.pdf', '_blank', 'noopener,noreferrer')
+  }
+
   const commands = {
     help: () => (
       <div className="command-output">
@@ -28,6 +38,7 @@ const Terminal = () => {
           <div><span className="command-name">experience</span> - Work experience</div>
           <div><span className="command-name">education</span> - Education background</div>
           <div><span className="command-name">contact</span> - Contact information</div>
+          <div><span className="command-name">cv</span> - View and download my CV</div>
           <div><span className="command-name">clear</span> - Clear terminal</div>
           <div><span className="command-name">github</span> - Open GitHub profile</div>
           <div><span className="command-name">linkedin</span> - Open LinkedIn profile</div>
@@ -180,6 +191,62 @@ const Terminal = () => {
       </div>
     ),
 
+    cv: () => (
+      <div className="command-output">
+        <div className="terminal-header">Curriculum Vitae</div>
+        <div className="cv-section">
+          <div className="cv-info">
+            <p>Download my professional CV in PDF format.</p>
+            <div className="cv-actions">
+              <button className="cv-btn view-btn" onClick={handleViewCV}>
+                <FaEye className="btn-icon" />
+                View CV
+              </button>
+              <button className="cv-btn download-btn" onClick={handleDownloadCV}>
+                <FaDownload className="btn-icon" />
+                Download CV
+              </button>
+            </div>
+            <div className="cv-preview">
+              <h4>CV Preview:</h4>
+              <div className="cv-content">
+                <div className="cv-header">
+                  <h3>Hannes Huslage</h3>
+                  <p>Full-Stack Developer</p>
+                </div>
+                <div className="cv-section-preview">
+                  <h4>Experience</h4>
+                  {cvData.experience.map((exp) => (
+                    <div key={exp.id} className="cv-item">
+                      <strong>{exp.position}</strong> at {exp.company} • {exp.period}
+                    </div>
+                  ))}
+                </div>
+                <div className="cv-section-preview">
+                  <h4>Education</h4>
+                  {cvData.education.slice(0, 2).map((edu, index) => (
+                    <div key={index} className="cv-item">
+                      <strong>{edu.degree}</strong> • {edu.institution} • {edu.year}
+                    </div>
+                  ))}
+                </div>
+                <div className="cv-section-preview">
+                  <h4>Technical Skills</h4>
+                  <div className="skills-preview">
+                    {Object.entries(cvData.skills).slice(0, 3).map(([category, skills]) => (
+                      <div key={category} className="skill-category-preview">
+                        <strong>{category}:</strong> {(skills as any[]).slice(0, 3).map(s => s.name).join(', ')}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    ),
+
     clear: () => {
       setCommandHistory([])
       return null
@@ -254,6 +321,7 @@ const Terminal = () => {
             <p>Welcome to my Interactive Terminal Portfolio</p>
             <p>Type <span className="command-example">help</span> to see available commands</p>
             <p>Navigate using terminal commands like <span className="command-example">about</span>, <span className="command-example">projects</span>, <span className="command-example">skills</span></p>
+            <p>Use <span className="command-example">cv</span> to view and download my CV</p>
           </div>
         </div>
       ),
