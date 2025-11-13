@@ -8,8 +8,8 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Hannes Huslage - Terminal Portfolio',
-  description: 'Full Stack Web Developer - Interactive Terminal Interface',
+  title: 'Hannes Huslage - Portfolio',
+  description: 'Full Stack Web Developer',
   keywords: ['web developer', 'full stack', 'react', 'next.js', 'typescript', 'terminal', 'portfolio'],
   authors: [{ name: 'Hannes Huslage' }],
   openGraph: {
@@ -33,4 +33,5 @@ export default function RootLayout({
       </body>
     </html>
   )
+
 }
