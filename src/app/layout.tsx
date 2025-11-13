@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://hannes-huslage.de',
     title: 'Hannes Huslage - Portfolio',
-    description: 'Full Stack Web Developer - Interactive Terminal Interface',
+    description: 'Full Stack Web Developer',
   },
 }
 
@@ -35,3 +35,4 @@ export default function RootLayout({
   )
 
 }
+
