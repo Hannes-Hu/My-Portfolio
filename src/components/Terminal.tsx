@@ -158,11 +158,23 @@ const Terminal = () => {
           </div>
           <div className="contact-item">
             <span className="contact-label">LOCATION:</span>
-            <span className="contact-value">{cvData.personal.location.split('\n')[0]}</span>
+            <span className="contact-value">{cvData.personal.location.replace('\n', ', ')}</span>
           </div>
           <div className="contact-item">
             <span className="contact-label">WEBSITE:</span>
             <span className="contact-value">{cvData.personal.website}</span>
+          </div>
+          <div className="contact-item">
+            <span className="contact-label">GITHUB:</span>
+            <a href={cvData.personal.github} target="_blank" rel="noopener noreferrer" className="contact-value contact-link">
+              {cvData.personal.github}
+            </a>
+          </div>
+          <div className="contact-item">
+            <span className="contact-label">LINKEDIN:</span>
+            <a href={cvData.personal.linkedin} target="_blank" rel="noopener noreferrer" className="contact-value contact-link">
+              {cvData.personal.linkedin}
+            </a>
           </div>
         </div>
       </div>
