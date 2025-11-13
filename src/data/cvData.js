@@ -19,54 +19,54 @@ export const cvData = {
       description: `• Built and launched gaming tournament platform from concept to deployment
 • Developed full-stack application architecture and user experience design
 • Implemented real-time features for tournament management and user engagement like Map Vetos and Match Scheduling
-• Managed technical infrastructure`,
+• Managed technical infrastructure - Linux Server setup and maintenance, Backend & Frontend setup and maintenance, Database setup and maintenance`,
       technologies: ["HTML5", "CSS3", "PHP", "JavaScript", "MySQL", "API Integration", "Python"]
     }
   ],
   skills: {
     "Programming Languages": [
-      { name: "TypeScript", percentage: 90 },
-      { name: "JavaScript", percentage: 87 },
-      { name: "Java", percentage: 84 },
-      { name: "HTML5", percentage: 92 },
-      { name: "CSS3", percentage: 91 },
-      { name: "PHP", percentage: 89 },
-      { name: "Lua", percentage: 92 }
+      { name: "TypeScript"},
+      { name: "JavaScript"},
+      { name: "Java"},
+      { name: "HTML5"},
+      { name: "CSS3"},
+      { name: "PHP"},
+      { name: "Lua"}
     ],
     "Frontend Technologies": [
-      { name: "Angular 17+", percentage: 89 },
-      { name: "React", percentage: 87 },
-      { name: "RxJS", percentage: 85 },
-      { name: "Bootstrap", percentage: 86 },
-      { name: "Tailwind CSS", percentage: 85 }
+      { name: "Angular 17+"},
+      { name: "React"},
+      { name: "RxJS"},
+      { name: "Bootstrap"},
+      { name: "Tailwind CSS"}
     ],
     "Backend Technologies": [
-      { name: "Node.js", percentage: 86 },
-      { name: "Express.js", percentage: 85 },
-      { name: "Spring Boot", percentage: 84 },
-      { name: "RESTful APIs", percentage: 89 },
-      { name: "PHP Backend", percentage: 89 }
+      { name: "Node.js"},
+      { name: "Express.js"},
+      { name: "Spring Boot"},
+      { name: "RESTful APIs"},
+      { name: "PHP Backend"}
     ],
     "Databases": [
-      { name: "MongoDB", percentage: 85 },
-      { name: "Mongoose ODM", percentage: 84 },
-      { name: "Database Design", percentage: 87 }
+      { name: "MongoDB"},
+      { name: "Mongoose ODM"},
+      { name: "Database Design"}
     ],
     "State Management": [
-      { name: "NgRx", percentage: 88 },
-      { name: "Redux/Context API", percentage: 85 }
+      { name: "NgRx"},
+      { name: "Redux/Context API"}
     ],
     "DevOps & Deployment": [
-      { name: "Docker", percentage: 85 },
-      { name: "Git/GitHub", percentage: 86 },
-      { name: "PM2", percentage: 83 },
-      { name: "Netlify", percentage: 84 }
+      { name: "Docker"},
+      { name: "Git/GitHub"},
+      { name: "PM2"},
+      { name: "Netlify"}
     ],
     "Architecture & Security": [
-      { name: "JWT Authentication", percentage: 87 },
-      { name: "Microservices Architecture", percentage: 86 },
-      { name: "API Security", percentage: 85 },
-      { name: "Clean Code Principles", percentage: 89 }
+      { name: "JWT Authentication"},
+      { name: "Microservices Architecture"},
+      { name: "API Security"},
+      { name: "Clean Code Principles"}
     ]
   },
   projects: [
@@ -144,6 +144,7 @@ export const cvData = {
   ]
 
 };
+
 
 
 
