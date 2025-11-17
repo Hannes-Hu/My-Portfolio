@@ -45,7 +45,8 @@ export const cvData = {
       { name: "Express.js"},
       { name: "Spring Boot"},
       { name: "RESTful APIs"},
-      { name: "PHP Backend"}
+      { name: "PHP Backend"},
+      { name: "TYPO3 CMS"}
     ],
     "Databases": [
       { name: "MongoDB"},
@@ -144,6 +145,7 @@ export const cvData = {
   ]
 
 };
+
 
 
 
