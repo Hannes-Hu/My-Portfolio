@@ -36,6 +36,7 @@ export const cvData = {
     "Frontend Technologies": [
       { name: "Angular 17+"},
       { name: "React"},
+      { name: "Vue.js"},
       { name: "RxJS"},
       { name: "Bootstrap"},
       { name: "Tailwind CSS"}
@@ -109,6 +110,15 @@ export const cvData = {
       github: "https://github.com/Hannes-Hu/NW-Leaderboard",
       liveDemo: "https://leaderboard.byt-tournaments.de",
       image: "/LB.png"
+    },
+    {
+      id: 4,
+      name: "VIN Decoder",
+      description: "A Website that uses the NHTSA API to show information for a given VIN.",
+      technologies: ["Vue.js", "HTML5", "JavaScript", "API"],
+      github: "https://github.com/Hannes-Hu/vin-decoder",
+      liveDemo: "https://vin-decoder-project.netlify.app",
+      image: ""
     }
   ],
   education: [
@@ -145,6 +155,7 @@ export const cvData = {
   ]
 
 };
+
 
 
 
