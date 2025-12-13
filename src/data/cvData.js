@@ -125,7 +125,7 @@ export const cvData = {
     {
       degree: "Wirtschaftsinformatik / Information Systems",
       institution: "Hochschule Osnabrück",
-      year: "Currently",
+      year: "2020 - 2025",
       focus: ""
     },
     {
@@ -155,6 +155,7 @@ export const cvData = {
   ]
 
 };
+
 
 
 
