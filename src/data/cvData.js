@@ -87,8 +87,8 @@ export const cvData = {
     {
       id: 2,
       name: "BYT Tournaments",
-      description: "Advanced React/Next.js portfolio website featuring interactive canvas animations, responsive design, and optimized performance. Built with TypeScript and modern web technologies.",
-      technologies: ["Next.js", "React", "TypeScript", "CSS3", "Canvas API", "(Framer) Motion", "Responsive Design", "Netlify"],
+      description: "Advanced React / Node Tournament Hosting Website.",
+      technologies: ["Node.js", "React", "TypeScript", "Tailwind", "MySQL"],
       github: "",
       liveDemo: "https://byt-tournaments.de",
       image: ""
@@ -155,6 +155,7 @@ export const cvData = {
   ]
 
 };
+
 
 
 
