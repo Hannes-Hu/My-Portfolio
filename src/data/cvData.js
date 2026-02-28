@@ -13,7 +13,7 @@ export const cvData = {
   experience: [
     {
       id: 1,
-      company: "BYT Tournaments",
+      company: "BYT Tournaments - byt-tournaments.de",
       position: "Co-Founder / Developer",
       period: "04.2025 - Present",
       description: `• Built and launched gaming tournament platform from concept to deployment
@@ -86,12 +86,12 @@ export const cvData = {
     },
     {
       id: 2,
-      name: "Modern Portfolio",
+      name: "BYT Tournaments",
       description: "Advanced React/Next.js portfolio website featuring interactive canvas animations, responsive design, and optimized performance. Built with TypeScript and modern web technologies.",
       technologies: ["Next.js", "React", "TypeScript", "CSS3", "Canvas API", "(Framer) Motion", "Responsive Design", "Netlify"],
-      github: "https://github.com/Hannes-Hu/My-Portfolio",
-      liveDemo: "https://hannes-huslage.de",
-      image: "/portfolio.png"
+      github: "",
+      liveDemo: "https://byt-tournaments.de",
+      image: ""
     },
     {
       id: 3,
@@ -155,6 +155,7 @@ export const cvData = {
   ]
 
 };
+
 
 
 
